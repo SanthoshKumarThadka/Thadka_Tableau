@@ -447,7 +447,7 @@
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
-      <column caption='PathOrder (bin)' datatype='integer' name='[PathOrder (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='PathOrder (bin)' datatype='integer' name='[PathOrder (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[PathOrder]' peg='0' size='1' />
       </column>
       <column aggregation='Sum' datatype='integer' name='[PathOrder]' role='dimension' type='ordinal' />
@@ -460,7 +460,7 @@
         </desc>
       </column>
       <column-instance column='[Calculation_311029907901145089]' derivation='None' name='[none:Calculation_311029907901145089:nk]' pivot='key' type='nominal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.438776' measure-ordering='alphabetic' measure-percentage='0.438776' parameter-percentage='0.122449' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.438776' measure-ordering='alphabetic' measure-percentage='0.440476' parameter-percentage='0.120748' show-structure='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[none:Calculation_311029907901145089:nk]' type='palette'>
@@ -598,7 +598,7 @@
               </calculation>
             </column>
             <column datatype='string' name='[Category]' role='dimension' type='nominal' />
-            <column caption='PathOrder (bin)' datatype='integer' name='[PathOrder (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='PathOrder (bin)' datatype='integer' name='[PathOrder (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[PathOrder]' peg='0' size='1' />
             </column>
             <column aggregation='Sum' datatype='integer' name='[PathOrder]' role='dimension' type='ordinal' />
@@ -625,28 +625,28 @@
             </column-instance>
             <column-instance column='[Calculation_311029907902517260]' derivation='User' name='[usr:Calculation_311029907902517260:qk:54]' pivot='key' type='quantitative'>
               <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902287882]' ordering-type='Rows' />
+              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902210057]' level-break='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' ordering-type='Field'>
+                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
+                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
+              </table-calc>
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902382091]' ordering-type='Field'>
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' />
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
               </table-calc>
-              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902210057]' level-break='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' ordering-type='Field'>
-                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
-                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
-              </table-calc>
-              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902287882]' ordering-type='Rows' />
-              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901898760]' ordering-type='Rows' />
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901255682]' ordering-field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' ordering-type='Field' />
+              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901898760]' ordering-type='Rows' />
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901558789]' ordering-field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' ordering-type='Field' />
-              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901378563]' level-address='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' ordering-type='Field'>
-                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
-                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
-                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' />
-              </table-calc>
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901796359]' ordering-type='Field'>
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' />
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
+              </table-calc>
+              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901378563]' level-address='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' ordering-type='Field'>
+                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
+                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
+                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' />
               </table-calc>
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901702150]' ordering-type='Field'>
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
@@ -655,25 +655,25 @@
             </column-instance>
             <column-instance column='[Calculation_311029907902570509]' derivation='User' name='[usr:Calculation_311029907902570509:qk:34]' pivot='key' type='quantitative'>
               <table-calc ordering-type='Rows' />
+              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902287882]' ordering-type='Rows' />
+              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902210057]' ordering-type='Rows' />
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902382091]' ordering-type='Field'>
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' />
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
               </table-calc>
-              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902210057]' ordering-type='Rows' />
-              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907902287882]' ordering-type='Rows' />
-              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901898760]' ordering-type='Rows' />
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901255682]' ordering-field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' ordering-type='Field' />
+              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901898760]' ordering-type='Rows' />
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901558789]' ordering-field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' ordering-type='Field' />
-              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901378563]' level-break='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' ordering-type='Field'>
-                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
-                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
-                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' />
-              </table-calc>
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901796359]' ordering-type='Field'>
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' />
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
+              </table-calc>
+              <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901378563]' level-break='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' ordering-type='Field'>
+                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901014016]' />
+                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
+                <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[PathOrder (bin)]' />
               </table-calc>
               <table-calc field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901702150]' ordering-type='Field'>
                 <order field='[federated.0rbeip81rlj8tm1007ykw1cffohj].[Calculation_311029907901145089]' />
